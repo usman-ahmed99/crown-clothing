@@ -4,12 +4,12 @@ import {getFirestore, doc, getDoc, setDoc} from 'firebase/firestore'
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCGkFpC82qlpIoUmeFohgfS-0zy8AfUiWI",
-    authDomain: "crown-clothing-45720.firebaseapp.com",
-    projectId: "crown-clothing-45720",
-    storageBucket: "crown-clothing-45720.appspot.com",
-    messagingSenderId: "890438924765",
-    appId: "1:890438924765:web:d29f2e2560b3b5d44b1e34"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
   };
   
   // Initialize Firebase
