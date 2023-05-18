@@ -8,7 +8,6 @@ import '../authentication/authentication.styles.scss'
 const Authentication = () => {
 
     useEffect( () => {
-        console.log(process.env)
         const fetchData = async () => {
             const response = await getRedirectResult(auth);
             if(response){
